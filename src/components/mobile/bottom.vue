@@ -27,7 +27,7 @@
       width: 160px;
     }
     .two-png{
-      width: 647px;
+      width:100%;
       margin-top: 26px;
     }
     .three-png{

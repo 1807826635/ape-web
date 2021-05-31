@@ -54,6 +54,8 @@
           <div>60万+</div>
           <div>招生人数students</div>
         </div>
+      </div>
+      <div class="dis-center dis-ali mechanism">
         <div class="ali-item">
           <div>5500万+</div>
           <div>活动业绩achievements</div>
@@ -223,28 +225,32 @@
   </div>
 </template>
 <script>
-  import submint from '@/components/submitInput'
+  import submint from '@/components/mobile/submitInput'
+
   export default {
     data() {
       return {}
     },
-    components:{
+    components: {
       submint
     }
   }
 </script>
 <style lang="scss" scoped>
   .wrap {
+    position: relative;
+    margin-top: 64px;
+    z-index: 1;
     .home-top {
       .top-img {
         height: 32rem;
         width: 100%;
-        background: url("../assets/image/home.png");
+        background: url("../../assets/image/home.png");
         background-size: 100% 100%;
         object-fit: cover;
         .top-text-z {
           color: #ffffff;
-          font-size: 3.4rem;
+          font-size: 2.4rem;
         }
       }
       .wrap {
@@ -252,11 +258,12 @@
       }
       .top-text-q {
         color: #ffffff;
-        font-size: 2.4rem;
+        font-size: 1.4rem;
       }
       .padding-top {
         padding-top: 5.95rem;
         padding-left: 3.8rem;
+        padding-right: 1rem;
       }
       .yellow-box {
         background: #ffed00;
@@ -324,7 +331,7 @@
         margin-bottom: 1.75rem;
       }
       .one-for {
-        width: 407px;
+        width: 100%;
       }
       .text-center-q {
         text-align: center;
@@ -359,7 +366,7 @@
       }
     }
     .center-1 {
-      width: 23.4rem;
+      width: 100%;
       text-align: center;
       color: #000000;
       margin: 0 auto;
@@ -370,8 +377,9 @@
       display: flex;
       justify-content: center;
       .to-ground-item {
-        margin-right: 1.5rem;
-        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         .first-text {
           font-size: 1.1rem;
           color: #000000;
@@ -400,7 +408,7 @@
       border: 1px solid #000000;
     }
     .center-2 {
-      width: 40rem;
+      width: 100%;
       height: 20rem;
       margin: 0 auto;
       border: 1px solid #000000;
@@ -421,13 +429,13 @@
     .section-3 {
       display: flex;
       .box-3 {
+        padding-bottom: 3rem;
         flex: 1;
         padding-top: 4.85rem;
         .box-2-content {
           text-align: center;
           font-size: 0.8rem;
           width: 50%;
-          height: 7.75rem;
           margin: 0 auto;
           margin-top: 3.6rem;
           margin-bottom: 3rem;
@@ -481,11 +489,11 @@
       .img-box {
         .img-tr {
           display: flex;
-          width: 50%;
+          width: 100%;
           justify-content: space-between;
           margin: 0 auto;
           margin-top: 2.8rem;
-          img{
+          img {
             width: 8.5rem;
           }
         }
@@ -493,13 +501,12 @@
     }
     .bg-color {
       background: #f2f2f2;
-      height: 27.25rem;
       text-align: center;
       position: relative;
       z-index: -2;
     }
     .min-width {
-      width: 1400px;
+      width: 100%;
       margin: 0 auto;
     }
     margin-bottom: 7.4rem;

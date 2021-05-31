@@ -58,7 +58,7 @@
       text-align: center;
     }
     .min-width{
-      width: 1400px;
+      width: 100%;
       margin:  0 auto;
     }
     .form{
